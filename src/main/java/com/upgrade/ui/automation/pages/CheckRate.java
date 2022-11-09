@@ -27,6 +27,10 @@ public class CheckRate {
 	@FindBy(how = How.CSS, using = "button[data-auto='CheckYourRate']")
 	private WebElement checkRateButton;
 
+	@FindBy(how = How.CSS, using = "button[data-auto='CheckYourRate']")
+	private WebElement checkRateButton1;
+
+
 	@FindBy(how = How.CSS, using = "select[data-auto='dropLoanPurpose']")
 	private WebElement selectList;
 	
