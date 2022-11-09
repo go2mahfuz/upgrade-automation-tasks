@@ -47,7 +47,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Nov 9, 2022 07:59:35 AM</span>
+                    <span class='label suite-start-time blue darken-3'>Nov 9, 2022 09:26:10 AM</span>
 				</a>
 			</li>
 			<li>
@@ -175,12 +175,12 @@
 				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>Loans Calculate Feature</span>
-						<span class='test-time'>Nov 9, 2022 07:59:35 AM</span>
+						<span class='test-time'>Nov 9, 2022 09:26:10 AM</span>
 						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='scenario node' test-id='2' status='fail'>
-	<span class='duration right label'>0h 0m 11s+537ms</span>
+	<span class='duration right label'>0h 0m 26s+818ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
 		<span class="desc-text">Validate loan, apr, term for the customer</span>
@@ -223,20 +223,19 @@
 			<b>When</b>
 			
 			<span class="bdd-step-name">When I enter personal details information</span>
-				<div class='pre'><pre>org.openqa.selenium.WebDriverException: target frame detached
-  (failed to check if window was closed: disconnected: unable to send message to renderer)
+				<div class='pre'><pre>org.openqa.selenium.WebDriverException: disconnected: unable to send message to renderer
+  (failed to check if window was closed: disconnected: unable to connect to renderer)
   (Session info: chrome=107.0.5304.89)
 Build info: version: '4.6.0', revision: '79f1c02ae20'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [12d38214c8b4a4fef67ec7ade575d9d8, findElement {using=name, value=borrowerFirstName}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.89, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\Mahfuz\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:54542}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54542/devtoo..., se:cdpVersion: 107.0.5304.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 12d38214c8b4a4fef67ec7ade575d9d8
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+Command: [78a432c26176e3a5141896396dcd58dd, findElement {using=name, value=borrowerFirstName}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.89, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\Mahfuz\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:51807}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51807/devtoo..., se:cdpVersion: 107.0.5304.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 78a432c26176e3a5141896396dcd58dd
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -250,10 +249,10 @@ Session ID: 12d38214c8b4a4fef67ec7ade575d9d8
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at com.sun.proxy.$Proxy21.sendKeys(Unknown Source)
+	at com.sun.proxy.$Proxy19.sendKeys(Unknown Source)
 	at com.upgrade.ui.automation.pages.CheckRate.enterFirstName(CheckRate.java:102)
 	at com.upgrade.ui.automation.steps.PersonalLoans.i_enter_first_name_and_last_name(PersonalLoans.java:52)
-	at ?.When I enter personal details information(PersonalLoans.feature:9)
+	at ✽.When I enter personal details information(PersonalLoans.feature:9)
 </pre></div>
 			
 		</li>
@@ -385,22 +384,21 @@ Session ID: 12d38214c8b4a4fef67ec7ade575d9d8
                                         </thead>
                                         <tbody>
                                                     <tr>
-                                                        <td>Nov 9, 2022 07:59:41 AM</td>
+                                                        <td>Nov 9, 2022 09:26:17 AM</td>
                                                         <td class='linked' test-id='7'>Loans Calculate Feature.Validate loan, apr, term for the customer.When I enter personal details information</td>
-                                                        <td><pre><pre>org.openqa.selenium.WebDriverException: target frame detached
-  (failed to check if window was closed: disconnected: unable to send message to renderer)
+                                                        <td><pre><pre>org.openqa.selenium.WebDriverException: disconnected: unable to send message to renderer
+  (failed to check if window was closed: disconnected: unable to connect to renderer)
   (Session info: chrome=107.0.5304.89)
 Build info: version: '4.6.0', revision: '79f1c02ae20'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [12d38214c8b4a4fef67ec7ade575d9d8, findElement {using=name, value=borrowerFirstName}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.89, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\Mahfuz\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:54542}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54542/devtoo..., se:cdpVersion: 107.0.5304.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 12d38214c8b4a4fef67ec7ade575d9d8
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+Command: [78a432c26176e3a5141896396dcd58dd, findElement {using=name, value=borrowerFirstName}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.89, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\Mahfuz\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:51807}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51807/devtoo..., se:cdpVersion: 107.0.5304.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 78a432c26176e3a5141896396dcd58dd
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -414,10 +412,10 @@ Session ID: 12d38214c8b4a4fef67ec7ade575d9d8
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at com.sun.proxy.$Proxy21.sendKeys(Unknown Source)
+	at com.sun.proxy.$Proxy19.sendKeys(Unknown Source)
 	at com.upgrade.ui.automation.pages.CheckRate.enterFirstName(CheckRate.java:102)
 	at com.upgrade.ui.automation.steps.PersonalLoans.i_enter_first_name_and_last_name(PersonalLoans.java:52)
-	at ?.When I enter personal details information(PersonalLoans.feature:9)
+	at ✽.When I enter personal details information(PersonalLoans.feature:9)
 </pre></pre></td>
                                                     </tr>
                                         </tbody>
@@ -462,19 +460,19 @@ Session ID: 12d38214c8b4a4fef67ec7ade575d9d8
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Nov 9, 2022 07:59:35 AM</div>
+					<div class='panel-lead'>Nov 9, 2022 09:26:10 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Nov 9, 2022 07:59:47 AM</div>
+			 		<div class='panel-lead'>Nov 9, 2022 09:26:37 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>11,637ms</div>
+					<div class='panel-lead'>26,960ms</div>
 				</div>
 			</div>
 		</div>
